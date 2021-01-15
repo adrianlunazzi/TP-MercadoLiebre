@@ -12,6 +12,10 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "./views/home.html"))
 
 });
+app.post("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "./views/home.html"))
+
+});
 app.get("/login.html", (req, res) => {
     res.sendFile(path.join(__dirname, "./views/login.html"))
 

@@ -90,6 +90,18 @@
           p {
               font-size: 12px;
           }
+          
+          @media(min-width:768px) {
+              header nav {
+                  display: flex;
+                  width: 100%;
+              }
+              header nav a {
+                  justify-content: space-between;
+                  flex-direction: row;
+                  flex-wrap: wrap;
+              }
+          }
           /*main*/
           
           main {
@@ -122,11 +134,6 @@
               background-color: #fff;
           }
           
-          .ofertas {
-              display: flex;
-              flex-wrap: wrap;
-          }
-          
           article .contenedor-articulo {
               width: 100%;
               display: flex;
@@ -137,24 +144,29 @@
               padding: 20px;
           }
           
-          .precio {
+          .contenedor-precios {
+              display: flex;
+              width: 100%;
+          }
+          
+          .precios {
               font-size: 18px;
               width: 30%;
               margin: 0 10px;
           }
           
-          .descuento,
+          .descuentos,
           .descripcion {
               font-size: 16px;
               font-weight: normal;
           }
           
-          .descuento {
+          .descuentos {
               width: 70%;
               margin: 0 10px;
           }
           
-          .descripcion {
+          .descripciones {
               margin-top: 20px;
           }
           
@@ -164,13 +176,23 @@
           }
           
           main section article i,
-          .descuento {
+          .descuentos {
               color: #39b54a;
+          }
+          
+          @keyframes giro {
+              0% {
+                  rotate: 0deg;
+              }
+              100% {
+                  rotate: 359deg;
+              }
           }
           
           .fa-truck {
               position: absolute;
               top: -15px;
+              animation: giro 2s infinite;
           }
           
           main section article i {
@@ -184,6 +206,25 @@
               border-radius: 50%;
               position: absolute;
               right: 20px;
+          }
+          
+          .descripciones {
+              display: none;
+          }
+          
+          article .descripciones img:hover {
+              display: block;
+          }
+          
+          @media(min-width:768px) {
+              .burger-menu {
+                  display: none;
+              }
+              section .ultima-visita {
+                  display: flex;
+                  flex-direction: row;
+                  width: 100vw;
+              }
           }
           /*footer*/
           
@@ -203,8 +244,25 @@
               background-color: #fff;
           }
           
+          footer article i:hover {
+              color: #0a1a33;
+          }
+          
           footer p {
               margin-top: 10px;
+          }
+          
+          @media(min-width:768px) {
+              footer {
+                  display: flex;
+                  justify-content: space-between;
+                  flex-wrap: wrap;
+              }
+              footer article {
+                  width: 30vw;
+                  margin: 10px 0;
+                  padding: 25px;
+              }
           }
           /*formularios*/
           
