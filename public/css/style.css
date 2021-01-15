@@ -1,357 +1,381 @@
-          * {
-              padding: 0;
-              margin: 0;
-              box-sizing: border-box;
-          }
-          
-          body {
-              font-family: "roboto";
-              background-color: #ebebeb;
-          }
-          
-          header {
-              background-color: #EAC926;
-          }
-          
-          .top-header {
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              width: 100%;
-          }
-          
-          .top-header img {
-              width: 50%;
-          }
-          
-          #busqueda {
-              width: 140px;
-              margin-left: 20px;
-          }
-          
-          header i {
-              text-align: center;
-              margin-left: 10px;
-          }
-          
-          header .buscar {
-              height: 20px;
-              margin-left: 20px;
-          }
-          
-          header p {
-              width: 100%;
-              text-align: center;
-              margin: 30px 0;
-          }
-          
-          li {
-              list-style: none;
-          }
-          
-          nav {
-              margin-top: 20px;
-              margin-left: 20px;
-              color: #03264C;
-          }
-          
-          nav a {
-              text-decoration: none;
-              color: #03264C;
-          }
-          
+      * {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+      }
+      
+      body {
+          font-family: "roboto";
+          background-color: #ebebeb;
+      }
+      
+      header {
+          background-color: #EAC926;
+      }
+      
+      .top-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+      }
+      
+      .top-header img {
+          width: 50%;
+      }
+      
+      #busqueda {
+          width: 30%;
+          height: 30px;
+          border-radius: 7px;
+          border: 0;
+          margin-left: 20px;
+      }
+      
+      header i {
+          text-align: center;
+          margin-left: 10px;
+          width: 10px;
+      }
+      
+      header .buscar {
+          height: 20px;
+          margin-left: 20px;
+      }
+      
+      header p {
+          width: 100%;
+          text-align: center;
+          margin: 30px 0;
+      }
+      
+      li {
+          list-style: none;
+      }
+      
+      nav {
+          margin-top: 20px;
+          margin-left: 20px;
+          color: #03264C;
+      }
+      
+      nav a {
+          text-decoration: none;
+          color: #03264C;
+      }
+      
+      .burger-menu {
+          text-align: center;
+      }
+      
+      .burger-menu i {
+          margin: 20px 0px;
+          width: 40px;
+          height: 40px;
+          background-color: #0044AA;
+          color: #FFF;
+          font-size: 20px;
+          padding: 10px;
+          border-radius: 5px;
+      }
+      
+      h3 {
+          font-size: 24px;
+          color: #666;
+      }
+      
+      h2 {
+          font-size: 18px;
+          text-align: left;
+          margin-left: 20px;
+          width: 100%;
+      }
+      
+      p {
+          font-size: 12px;
+      }
+      
+      @media(min-width:768px) {
           .burger-menu {
-              text-align: center;
-          }
-          
-          .burger-menu i {
-              margin: 20px 0px;
-              width: 40px;
-              height: 40px;
-              background-color: #0044AA;
-              color: #FFF;
-              font-size: 20px;
-              padding: 10px;
-              border-radius: 5px;
-          }
-          
-          h3 {
-              font-size: 24px;
-              color: #666;
-          }
-          
-          h2 {
-              font-size: 18px;
-              text-align: left;
-              margin-left: 20px;
-              width: 100%;
-          }
-          
-          p {
-              font-size: 12px;
-          }
-          
-          @media(min-width:768px) {
-              header nav {
-                  display: flex;
-                  width: 100%;
-              }
-              header nav a {
-                  justify-content: space-between;
-                  flex-direction: row;
-                  flex-wrap: wrap;
-              }
-          }
-          /*main*/
-          
-          main {
-              width: 90%;
-              text-align: center;
-              margin: auto;
-          }
-          
-          section.banner img {
-              width: 100%;
-              display: block;
-              margin-top: 10px;
-          }
-          
-          main article {
-              margin-top: 10px;
-          }
-          
-          article .contenedor-articulo {
-              width: 100%;
-              display: flex;
-              flex-wrap: wrap;
-              align-items: baseline;
-              border-top: 1px solid #ebebeb;
-              position: relative;
-              padding: 20px;
-          }
-          
-          .contenedor-articulo {
-              background-color: #fff;
-          }
-          
-          article .contenedor-articulo {
-              width: 100%;
-              display: flex;
-              flex-wrap: wrap;
-              align-items: baseline;
-              border-top: 1px solid #ebebeb;
-              position: relative;
-              padding: 20px;
-          }
-          
-          .contenedor-precios {
-              display: flex;
-              width: 100%;
-          }
-          
-          .precios {
-              font-size: 18px;
-              width: 30%;
-              margin: 0 10px;
-          }
-          
-          .descuentos,
-          .descripcion {
-              font-size: 16px;
-              font-weight: normal;
-          }
-          
-          .descuentos {
-              width: 70%;
-              margin: 0 10px;
-          }
-          
-          .descripciones {
-              margin-top: 20px;
-          }
-          
-          main section article img {
-              display: block;
-              width: 100%;
-          }
-          
-          main section article i,
-          .descuentos {
-              color: #39b54a;
-          }
-          
-          @keyframes giro {
-              0% {
-                  rotate: 0deg;
-              }
-              100% {
-                  rotate: 359deg;
-              }
-          }
-          
-          .fa-truck {
-              position: absolute;
-              top: -15px;
-              animation: giro 2s infinite;
-          }
-          
-          main section article i {
-              display: block;
-              font-size: 16px;
-              padding: 5px;
-              width: 30px;
-              height: 30px;
-              border: 1px solid #39b54a;
-              background-color: #FFF;
-              border-radius: 50%;
-              position: absolute;
-              right: 20px;
-          }
-          
-          .descripciones {
               display: none;
           }
-          
-          article .descripciones img:hover {
-              display: block;
+          .menu {
+              display: flex;
+              justify-content: space-between;
+              width: 90%;
           }
-          
-          @media(min-width:768px) {
-              .burger-menu {
-                  display: none;
-              }
-              section .ultima-visita {
-                  display: flex;
-                  flex-direction: row;
-                  width: 100vw;
-              }
-          }
-          /*footer*/
-          
-          footer {
+          .menu1 {
+              display: flex;
+              justify-content: space-between;
               width: 100%;
-              text-align: center;
-              background-color: #fff;
-              margin-top: 10px;
+              padding: 20px;
+              margin-right: 40px;
           }
-          
-          footer article i {
-              font-size: 2em;
-              margin: 10px 0;
-              width: 100%;
-              text-align: center;
-              color: #0044AA;
-              background-color: #fff;
-          }
-          
-          footer article i:hover {
-              color: #0a1a33;
-          }
-          
-          footer p {
-              margin-top: 10px;
-          }
-          
-          @media(min-width:768px) {
-              footer {
-                  display: flex;
-                  justify-content: space-between;
-                  flex-wrap: wrap;
-              }
-              footer article {
-                  width: 30vw;
-                  margin: 10px 0;
-                  padding: 25px;
-              }
-          }
-          /*formularios*/
-          
-          .login label {
-              position: relative;
-              top: 25px;
-          }
-          
-          .login input,
-          .register input {
-              width: 100%;
-              padding: 10px;
-              margin: 40px 0px;
-              border-radius: 7px;
-              border: 0px;
-          }
-          
-          .login input[type='submit'],
-          .register input[type='submit'] {
-              color: #FFF;
-              background-color: #0044AA;
-              border-radius: 5px;
-          }
-          
-          .login input[type='submit']:hover,
-          .register input[type='submit']:hover {
-              background-color: #0022AA;
-          }
-          
-          .register input[type='reset'] {
-              color: #FFF;
-              background-color: #aa0000;
-          }
-          
-          .register input[type='reset']:hover {
-              background-color: #770303;
-          }
-          
-          .user_profile {
-              margin-top: 20px;
+          .menu2 {
               display: flex;
               justify-content: space-around;
               width: 100%;
+              padding: 20px;
+              margin-right: 40px;
           }
-          
-          .user_profile div {
+          #busqueda {
+              width: 30%;
+          }
+      }
+      /*main*/
+      
+      main {
+          width: 90%;
+          text-align: center;
+          margin: auto;
+      }
+      
+      main img {
+          width: 100%;
+          display: block;
+      }
+      
+      main article {
+          margin-top: 10px;
+      }
+      
+      article .contenedor-articulo {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: baseline;
+          border-top: 1px solid #ebebeb;
+          position: relative;
+          padding: 20px;
+      }
+      
+      .contenedor-articulo {
+          background-color: #fff;
+      }
+      
+      article .contenedor-articulo {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: baseline;
+          border-top: 1px solid #ebebeb;
+          position: relative;
+          padding: 20px;
+      }
+      
+      .contenedor-precios {
+          display: flex;
+          width: 100%;
+      }
+      
+      .precios {
+          font-size: 18px;
+          width: 30%;
+          margin: 0 10px;
+      }
+      
+      .descuentos,
+      .descripcion {
+          font-size: 16px;
+          font-weight: normal;
+      }
+      
+      .descuentos {
+          width: 70%;
+          margin: 0 10px;
+      }
+      
+      .descripciones {
+          margin-top: 20px;
+      }
+      
+      main section article img {
+          display: block;
+          width: 100%;
+      }
+      
+      main section article i,
+      .descuentos {
+          color: #39b54a;
+      }
+      
+      @keyframes giro {
+          0% {
+              rotate: 0deg;
+          }
+          100% {
+              rotate: 359deg;
+          }
+      }
+      
+      .fa-truck {
+          position: absolute;
+          top: -15px;
+          animation: giro 2s infinite;
+      }
+      
+      main section article i {
+          display: block;
+          font-size: 16px;
+          padding: 5px;
+          width: 30px;
+          height: 30px;
+          border: 1px solid #39b54a;
+          background-color: #FFF;
+          border-radius: 50%;
+          position: absolute;
+          right: 20px;
+      }
+      
+      .descripciones {
+          display: none;
+      }
+      
+      article .descripciones img:hover {
+          display: block;
+      }
+      
+      @media(min-width:768px) {
+          section .ultima-visita {
               display: flex;
-              align-items: center;
-              justify-content: space-around;
+              justify-content: space-between;
+              flex-wrap: nowrap;
               width: 100%;
           }
-          
-          div.profile input,
-          div.profile label {
-              width: auto;
-              width: auto;
-          }
-          
-          .interest {
-              margin-top: 20px;
+          .productos {
               display: flex;
               justify-content: space-between;
               flex-direction: row;
-              flex-wrap: wrap;
-              width: 100%;
-          }
-          
-          div.interests {
-              display: flex;
-              flex-wrap: wrap;
-              width: 100%;
-          }
-          
-          div.interests div {
-              width: 100%;
-              display: flex;
               flex-wrap: nowrap;
-              align-items: center;
+              width: 20%;
           }
-          
-          div.interests div input,
-          div.interests div label {
-              width: auto;
+      }
+      /*footer*/
+      
+      footer {
+          width: 100%;
+          text-align: center;
+          background-color: #fff;
+          margin-top: 10px;
+      }
+      
+      footer article i {
+          font-size: 2em;
+          margin: 10px 0;
+          width: 100%;
+          text-align: center;
+          color: #0044AA;
+          background-color: #fff;
+      }
+      
+      footer article i:hover {
+          color: #0a1a33;
+      }
+      
+      footer p {
+          margin-top: 10px;
+      }
+      
+      @media(min-width:768px) {
+          footer {
+              display: flex;
+              justify-content: space-between;
+              flex-wrap: wrap;
           }
-          
-          div.interests div input {
-              margin: 20px;
+          footer article {
+              width: 30vw;
+              margin: 10px 0;
+              padding: 25px;
           }
-          
-          .product_img:hover {
-              box-shadow: rgb(37, 37, 37);
-          }
+      }
+      /*formularios*/
+      
+      .login label {
+          position: relative;
+          top: 25px;
+      }
+      
+      .login input,
+      .register input {
+          width: 100%;
+          padding: 10px;
+          margin: 40px 0px;
+          border-radius: 7px;
+          border: 0px;
+      }
+      
+      .login input[type='submit'],
+      .register input[type='submit'] {
+          color: #FFF;
+          background-color: #0044AA;
+          border-radius: 5px;
+      }
+      
+      .login input[type='submit']:hover,
+      .register input[type='submit']:hover {
+          background-color: #0022AA;
+      }
+      
+      .register input[type='reset'] {
+          color: #FFF;
+          background-color: #aa0000;
+      }
+      
+      .register input[type='reset']:hover {
+          background-color: #770303;
+      }
+      
+      .user_profile {
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+      }
+      
+      .user_profile div {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          width: 100%;
+      }
+      
+      div.profile input,
+      div.profile label {
+          width: auto;
+          width: auto;
+      }
+      
+      .interest {
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
+      }
+      
+      div.interests {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+      }
+      
+      div.interests div {
+          width: 100%;
+          display: flex;
+          flex-wrap: nowrap;
+          align-items: center;
+      }
+      
+      div.interests div input,
+      div.interests div label {
+          width: auto;
+      }
+      
+      div.interests div input {
+          margin: 20px;
+      }
+      
+      .product_img:hover {
+          box-shadow: rgb(37, 37, 37);
+      }
