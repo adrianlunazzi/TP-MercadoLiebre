@@ -240,19 +240,16 @@ main section article i,
     color: #39b54a;
 }
 
-@keyframes giro {
-    0% {
-        rotate: 0deg;
-    }
-    100% {
-        rotate: 359deg;
-    }
-}
-
 .fa-truck {
     position: absolute;
     top: -15px;
-    animation: giro 2s infinite;
+    animation: 6s rotate360 infinite linear;
+}
+
+@keyframes rotate360 {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 main section article i {
@@ -268,11 +265,15 @@ main section article i {
     right: 20px;
 }
 
+.productos {
+    box-shadow: 2px 5px 5px rgba(102, 102, 102, 0.438);
+}
+
 .descripciones {
     display: none;
 }
 
-.ofertas article img:hover {
+.productos article img:hover {
     display: block
 }
 
